@@ -1,5 +1,8 @@
 # Test project for DevelopToday
-https://test-develop-today.herokuapp.com/admin/
+Heroku: https://test-develop-today.herokuapp.com/admin
+
+Documentation: https://documenter.getpostman.com/view/14709805/TWDcFuN8
+
 
 ## Quick Start
 Prerequisites:
@@ -25,6 +28,12 @@ Assuming the above step succeeded, you should now have a Django app running in a
 However, the Postgres database will be empty. Populate it by running:
 
 ```
-$ docker-compose exec web python manage.py migrate
+$ docker-compose run web python3 manage.py migrate
 ```
+Run this command to add all the defined `CRONJOBS` to `crontab`(*nix cron utility).
+
+```
+$ docker-compose run web python3 manage.py crontab add
+```
+
 All going well you should now be able to open the Django app at http://localhost:8000/.

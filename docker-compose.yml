@@ -12,7 +12,7 @@ services:
       - POSTGRES_DB=postgres
 
   web:
-    container_name: news
+    container_name: web
     build: ./
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
     volumes:
