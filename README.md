@@ -14,7 +14,7 @@ Download the project code into a new directory:
 
 ```
 $ git clone https://github.com/davgulzana/test-developtoday.git  
-$ cd news
+$ cd test-developtoday
 ```
 Create `.env` file for web environment variables:
 * SECRET_KEY
@@ -42,3 +42,10 @@ $ docker-compose run web python3 manage.py crontab add
 ```
 
 All going well you should now be able to open the Django app at http://localhost:8000/.
+
+You can create super user:
+
+```
+$ docker-compose run web python3 manage.py createsuperuser
+```
+And login as super user at http://localhost:8000/admin/.
