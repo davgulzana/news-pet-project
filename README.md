@@ -16,10 +16,15 @@ Download the project code into a new directory:
 $ git clone https://github.com/davgulzana/test-developtoday.git  
 $ cd news
 ```
-Create `.env` file for environment variables:
+Create `.env` file for web environment variables:
 * SECRET_KEY
 * DEBUG
 * DATABASE_URL
+
+And `.env.db` with db environment variables:
+* POSTGRES_USER
+* POSTGRES_PASSWORD
+* POSTGRES_DB
 
 Run `docker-compose up -d --build` to download the Docker images and bring up the development environment in Docker Compose. This will take a while the first time, but on subsequent runs will be much quicker as the Docker images will be cached.
 
