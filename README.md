@@ -1,4 +1,4 @@
-# Test project for DevelopToday
+# Test project 'News'
 Heroku: https://test-develop-today.herokuapp.com/admin
 
 Documentation: https://documenter.getpostman.com/view/14709805/TWDcFuN8
