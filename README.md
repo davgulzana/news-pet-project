@@ -13,8 +13,8 @@ Prerequisites:
 Download the project code into a new directory:
 
 ```
-$ git clone https://github.com/davgulzana/test-developtoday.git  
-$ cd test-developtoday
+$ git clone https://github.com/davgulzana/test-news.git 
+$ cd test-news
 ```
 Create `.env` file for web environment variables:
 * SECRET_KEY
